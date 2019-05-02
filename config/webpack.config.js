@@ -48,7 +48,7 @@ const sassModuleRegex = /\.module\.(scss|sass)$/;
 module.exports = function(webpackEnv) {
   const isEnvDevelopment = webpackEnv === 'development';
   const isEnvProduction = webpackEnv === 'production';
-
+  
   // Webpack uses `publicPath` to determine where the app is being served from.
   // It requires a trailing slash, or the file assets will get an incorrect path.
   // In development, we always serve from the root. This makes config easier.
@@ -67,9 +67,10 @@ module.exports = function(webpackEnv) {
     : isEnvDevelopment && '';
   // Get environment variables to inject into our app.
   const env = getClientEnvironment(publicUrl);
-
+  
   // common function to get style loaders
   const getStyleLoaders = (cssOptions, preProcessor) => {
+    
     const loaders = [
       isEnvDevelopment && require.resolve('style-loader'),
       isEnvProduction && {
@@ -295,6 +296,21 @@ module.exports = function(webpackEnv) {
     },
     module: {
       strictExportPresence: true,
+      loaders: [
+        {
+          test: /\.js?$/,
+          exclude: /node_modules/,
+          loader: 'babel-loader',
+          query: {
+            presets: ['es2015'],
+            plugins: ['transform-react-jsx'],
+          },
+        },
+        {
+          test: /\.module.css$/,
+          loaders: ['style-loader', 'css-loader?modules'],
+        },
+      ],
       rules: [
         // Disable require.ensure as it's not a standard language feature.
         { parser: { requireEnsure: false } },
@@ -619,5 +635,7 @@ module.exports = function(webpackEnv) {
     // Turn off performance processing because we utilize
     // our own hints via the FileSizeReporter
     performance: false,
+
+    
   };
 };
