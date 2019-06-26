@@ -4,6 +4,11 @@ module.exports = {
   siteMetadata: {
     title: `KokiYamamoto's Portfolio`,
     author: `Koki Yamamoto`,
+    description: `A starter blog demonstrating what Gatsby can do.`,
+    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    social: {
+      twitter: `kylemathews`,
+    },
   },
   plugins: [
     {

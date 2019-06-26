@@ -1,7 +1,7 @@
 import React,{useState} from 'react'
 import {createMuiTheme} from '@material-ui/core/styles'
 import EventListener from 'react-event-listener'
-import SEO from "../components/seo"
+import SEO from '../components/seo'
 import Header from "../components/Header"
 import MainVisual from '../components/MainVisual';
 import Profile from '../components/Profile'
@@ -30,7 +30,7 @@ function index(){
     return(
         <div>
             <EventListener target="window" onResize={handleResize} />
-            <SEO title = "KokiYamamoto"/>
+            <SEO title= "KokiYamamoto"/>
             <Header width = {screenWidth} theme={theme}/>
             <MainVisual />
             <Profile />
