@@ -13,6 +13,9 @@ function Menu(props){
                     <Button className = {Style.button}> Home </Button>
                 </Grid>
                 <Grid>
+                    <Button className = {Style.button}> Profile </Button>
+                </Grid>
+                <Grid>
                     <Button className = {Style.button}> Career </Button>
                 </Grid>
                 <Grid>

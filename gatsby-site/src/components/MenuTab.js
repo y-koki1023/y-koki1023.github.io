@@ -16,6 +16,7 @@ function MenuTab (props){
             {props.width >= 470 ?
                 <Tabs value = {value} onChange={handleChange}>
                     <Tab label = "Home" />
+                    <Tab label = "Profile"/>
                     <Tab label = "Career"/>
                     <Tab label = "Awards"/>
                 </Tabs>

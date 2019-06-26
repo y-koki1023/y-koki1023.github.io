@@ -3,7 +3,8 @@ import AppBar from "@material-ui/core/AppBar"
 import ToolBar from "@material-ui/core/Toolbar"
 import MenuTab from "../components/MenuTab"
 import Menu  from "../components/Menu"
-import Styles from "../css/Header.module.css"
+import Style from "../css/Header.module.css"
+import { ThemeProvider } from '@material-ui/styles';
 
 function Header(props){
     const [isOpen,setOpen] = useState(false);
@@ -11,15 +12,18 @@ function Header(props){
         setOpen(!isOpen)
         console.log(isOpen)
     }
+    
 
     return(
-        <div>
-            <AppBar position = "static" >
-                <ToolBar >
-                    <p className = {Styles.title}>Koki Yamamoto</p>
-                    <MenuTab width = {props.width} onClick ={handleClick}/>
-                </ToolBar>
-            </AppBar>
+        <div className = {Style.headerBody}>
+            <ThemeProvider theme={props.theme}>
+                <AppBar position = "fixed">
+                    <ToolBar theme={props.theme}>
+                        <p className = {Style.headerTitle}>Koki Yamamoto</p>
+                        {/*<MenuTab width = {props.width} onClick ={handleClick}/>*/}
+                    </ToolBar>
+                </AppBar>
+            </ThemeProvider>
             <Menu isOpen = {isOpen}/>
         </div>
 
