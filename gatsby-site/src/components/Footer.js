@@ -7,6 +7,7 @@ function Footer(){
         <section name="footer">
             <div className={Style.FooterBody}>
                 
+                
                 <StaticQuery
                     query={query}
                     render={ data => (
