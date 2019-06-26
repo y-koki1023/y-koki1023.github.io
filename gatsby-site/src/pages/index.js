@@ -30,7 +30,7 @@ function index(){
     return(
         <div>
             <EventListener target="window" onResize={handleResize} />
-            <SEO/>
+            <SEO title= "KokiYamamoto"/>
             <Header width = {screenWidth} theme={theme}/>
             <MainVisual />
             <Profile />
