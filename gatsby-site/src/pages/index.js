@@ -9,13 +9,6 @@ import Footer from "../components/Footer"
 
 
 function index(){
-<<<<<<< HEAD
-=======
-    const [screenWidth,setScreenWidth] = useState(window.parent.screen.width);
-    const handleResize = () =>{
-        setScreenWidth(window.innerWidth)
-    }
->>>>>>> 4d13a579b4b62767c3e4da961a538f9f38c0295c
     const theme = createMuiTheme({
         palette:{
             primary:{
