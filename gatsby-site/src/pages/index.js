@@ -10,7 +10,6 @@ import Footer from "../components/Footer"
 
 function index(){
     const [screenWidth,setScreenWidth] = useState(window.parent.screen.width);
-
     const handleResize = () =>{
         setScreenWidth(window.innerWidth)
     }
