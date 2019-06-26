@@ -9,10 +9,6 @@ import Footer from "../components/Footer"
 
 
 function index(){
-    const [screenWidth,setScreenWidth] = useState(window.parent.screen.width);
-    const handleResize = () =>{
-        setScreenWidth(window.innerWidth)
-    }
     const theme = createMuiTheme({
         palette:{
             primary:{
@@ -28,9 +24,8 @@ function index(){
     })
     return(
         <div>
-            <EventListener target="window" onResize={handleResize} />
             <SEO title= "KokiYamamoto"/>
-            <Header width = {screenWidth} theme={theme}/>
+            <Header theme={theme}/>
             <MainVisual />
             <Profile />
             <Footer />
