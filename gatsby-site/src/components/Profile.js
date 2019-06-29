@@ -9,6 +9,7 @@ function Profile(){
                 <p className = {Style.ProfileTextH2} >Profile</p>
             </div>
             <div className = {Style.ProfileComp}>
+
                 <div className = {Style.ProfileSubcomp}>
                     <StaticQuery
                         query={query}
@@ -16,7 +17,7 @@ function Profile(){
                             <Img 
                                 fluid={data.file.childImageSharp.fluid}
                                 alt="test"
-                                className={Style.ProfileImage}
+                                
                             />
                         )}
                     />
