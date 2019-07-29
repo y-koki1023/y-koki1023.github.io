@@ -1,0 +1,1 @@
+{"errors":[{"message":"Expected type MarkdownRemarkFieldsEnum, found frontmatter___name; Did you mean the enum value frontmatter___date, frontmatter___title, frontmatter___index, frontmatter___description, or frontmatter___desctiption?","locations":[{"line":7,"column":86}]}]}
