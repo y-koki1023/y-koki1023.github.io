@@ -5,6 +5,7 @@ import SEO from '../components/seo'
 import Header from "../components/Header"
 import MainVisual from '../components/MainVisual';
 import Profile from '../components/Profile'
+import History from '../components/History'
 import Footer from "../components/Footer"
 
 
@@ -28,6 +29,7 @@ function index(){
             <Header theme={theme}/>
             <MainVisual />
             <Profile />
+            <History />
             <Footer />
         </div>
     )
