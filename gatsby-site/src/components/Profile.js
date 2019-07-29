@@ -16,8 +16,7 @@ function Profile(){
                         render={ data => (
                             <Img 
                                 fluid={data.file.childImageSharp.fluid}
-                                alt="test"
-                                
+                                alt="profileImage"
                             />
                         )}
                     />
@@ -27,7 +26,7 @@ function Profile(){
                         <dt>Name</dt>
                         <dd>KokiYamamoto / 山本皓貴</dd>
                         <dt>Belong</dt>
-                        <dd>豊橋技術科学大学 知能情報課程</dd>
+                        <dd>豊橋技術科学大学 情報知能工学課程</dd>
                         <dt>Write</dt>
                         <dd>C/C++/Java/Python/R/HTML/CSS/JavaScript/React/Ruby</dd>
                         <dt>Do</dt>
@@ -47,7 +46,7 @@ export const query = graphql`
   query{
     file(relativePath: {eq: "ProfileImage.jpg"}) {
       childImageSharp{
-        fluid{
+        fluid(maxWidth: 400, maxHeight: 400){
             ...GatsbyImageSharpFluid
         }
       }
