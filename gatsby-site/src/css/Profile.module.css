@@ -1,29 +1,7 @@
-.Profile-body{
-    /*height: 60vh;*/
-    width: 100%;
-    background-color:#7EBB5D;
-}
 .Profile-title{
     text-align: center;
     margin-bottom: 5px;
     color : white;
-}
-.Profile-image{
-    height:100%;
-    width:100%;
-
-}
-.Profile-comp{
-    width:100%;
-    height:80%;
-    display: flex;
-}
-.Profile-subcomp{
-    width:50%;
-    height:100%;
-    margin:0;
-    color : white;
-    padding:10px;
 }
 .Profile-text-h1{
     font-size: 48px;
@@ -35,23 +13,49 @@
     line-height:1.3;
     margin-bottom:0;
 }
+.Profile-body{
+    width: 100%;
+    padding: 5%;
+    background-color:#7EBB5D;
+}
+.Profile-comp{
+    display: block;
+    box-sizing:border-box;
+}
+.Profile-subcomp{
+    height:100%;
+    margin:10%;
+}
+.Profile-image{
+    height: 100%;
+    width:100%;
+}
+.Profile-text{
+    color : white;
+}
 
-@media screen and (max-width:480px){
-    .Profile-text-h1{
-        font-size: 24px;
+@media screen and (min-width:480px) {
+    .Profile-body{
+        width: 100%;
+        background-color:#7EBB5D;
     }
-    .Profile-text-h2{
-        font-size: 20px;
-    }
-    .Profile-comp{
-        display: inline-block;
-    }
+}
+
+@media screen and (min-width:768px) {
+    .Profile-comp {
+        display: flex;
+    } 
     .Profile-subcomp{
-        width:100%;
-        height:100%;
+        width: 50%;
         
     }
-    .Profile-image{
+}
 
-    } 
+@media screen and (min-width:1024px) {
+    .Profile-comp{
+        display: flex;
+    }
+    .Profile-subcomp{
+        width: 50%;
+    }
 }

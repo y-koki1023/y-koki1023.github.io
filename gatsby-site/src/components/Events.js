@@ -21,7 +21,7 @@ export default (props) =>  {
                       console.log(frontmatter)
                         return(
                           <div>
-                            <Typography variant="body1" onClick={handleClick} style = {{}}>{frontmatter.node.frontmatter.title} </Typography>
+                            <Typography variant="body1" onClick={handleClick}>{frontmatter.node.frontmatter.title} </Typography>
                             <Modal
                                 aria-labelledby="simple-modal-title"
                                 aria-describedby="simple-modal-description"
