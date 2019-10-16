@@ -16,7 +16,6 @@
 .Profile-body{
     width: 100%;
     padding: 5%;
-    background-color:#7EBB5D;
 }
 .Profile-comp{
     display: block;
@@ -37,17 +36,20 @@
 @media screen and (min-width:480px) {
     .Profile-body{
         width: 100%;
-        background-color:#7EBB5D;
     }
 }
 
 @media screen and (min-width:768px) {
     .Profile-comp {
         display: flex;
+        margin-top: 5%;
     } 
     .Profile-subcomp{
-        width: 50%;
-        
+        width: 30%;
+        margin-right: 10%;
+    }
+    .Profile-image{
+        margin-top: 30%;
     }
 }
 
