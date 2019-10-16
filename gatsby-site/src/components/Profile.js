@@ -19,8 +19,10 @@ function Profile(){
                                 <Img 
                                     fluid={data.file.childImageSharp.fluid}
                                     alt="profileImage"
+                                    style = {{borderRadius: "50%"}}
                                 />
                             )}
+                            
                         />
                     </div>
                 </div>

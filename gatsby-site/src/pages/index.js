@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React from 'react'
 import {createMuiTheme} from '@material-ui/core/styles'
 import EventListener from 'react-event-listener'
 import SEO from '../components/seo'
