@@ -16,6 +16,7 @@
 .Profile-body{
     width: 100%;
     padding: 5%;
+    background-color:#7EBB5D;
 }
 .Profile-comp{
     display: block;
@@ -36,6 +37,7 @@
 @media screen and (min-width:480px) {
     .Profile-body{
         width: 100%;
+        background-color:#7EBB5D;
     }
 }
 
