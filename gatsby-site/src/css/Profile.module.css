@@ -66,7 +66,6 @@ dd{
 @media screen and (min-width:1024px) {
     .Profile-body{
         margin:5%;
-        min-height: 50vh;
     }
     .Profile-comp {
         display: flex;
