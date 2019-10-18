@@ -1,5 +1,5 @@
 .MainVisual-body{
-    height : 30%;
+    max-height : 60vh;
 }
 .MainVisual-text{
     position: absolute;
@@ -11,23 +11,22 @@
     
 }
 .MainVisual-text-h1{
-    font-size: 48px;
+    font-size: 18px; 
     line-height: 1.3;
     margin-bottom:0;
     
 }
 .MainVisual-text-h2{
-    font-size: 36px;
+    font-size: 14px;
     line-height:1.3;
     margin-bottom:0;
 }
 
 .MainVisual-image-area{
     position: relative;
-    
 }
 
-@media screen and (max-width:425px){
+@media screen and (min-width:480px){
     .MainVisual-text-h1{
         font-size: 24px;
     }
@@ -36,3 +35,18 @@
     }
 }
 
+@media screen and (min-width:768px){
+    .MainVisual-text-h1{
+        font-size: 36px;
+        font-size: 24px;
+    }
+}
+
+@media screen and (min-width:1024px){
+    .MainVisual-text-h1{
+        font-size: 48px;
+    }
+    .MainVisual-text-h2{
+        font-size: 36px;
+    }
+}
